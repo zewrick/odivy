@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+/* Generals */
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+img {
+ display: block;
+ max-width: 100%;
+}
+
+.container{
+ width: 90%;
+ margin: auto;
+}
+
+body {
+  letter-spacing: 1px;
+ font-family: 'roboto', sans-serif;
+ background: #000;
+}
+
+h1, h2, h3 {
+ font-weight: bold;
+}
+
+p {
+ font-weight: ;
+  font-size: 18px;
+}
+
+/* HEADER */
+.header {
+ height: 60px;
+ background: #000;
+ position: fixed;
+ width: 100%;
+ top:0;
+ left:0;
+ z-index: 100;
+ 
+}
+
+.header .container {
+ display: flex;
+ justify-content: space-between;
+}
+
+.logo{
+ margin: 10px;
+ height: 40px;
+}
+
+.icon-menu {
+ width: 50px;
+ height: 40px;
+ margin: 10px;
+ cursor: pointer;
+}
+
+
+.nav {
+ position: absolute;
+ width: 100%;
+ top: 60px;
+  /* display from left */
+ right: -100%;
+ transition: all 0.5s;
+ 
+ 
+}
+
+.menu {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ height: 100vh;
+ background-color: rgba(0,0,0,0.97);
+
+}
+
+/**** nav *****/
+
+.menu-container{
+ padding: 5px;
+}
+.menu-link {
+ background: #0b0b0b;
+ display: block;
+ padding: 20px;
+ text-decoration: none;
+ color: white;
+ border-radius: 30px;
+}
+
+.menu-link:hover {
+ background: #151515;
+}
+
+
+/*---- menu displayed ----*/
+
+.display {
+right: 0;
+ z-index: 1;
+}
+
+/************ BANNER ************/
+
+.banner-title, .banner-text{
+ color: #fff;
+ padding-bottom: 20px;
+}
+
+.banner .container {
+ text-align: center;
+ margin-bottom: 40px;
+}
+
+.banner-text{
+ text-align: justify;
+ margin-bottom: 10px;
+
+}
+
+.banner-title{
+ font-size: 40px;
+}
+
+.btn-banner {
+
+  background-color: rgba(23,253,9,0.85);
+    border: none;
+    color: white;
+ font-weight: bold;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+ border-radius: 30px;
+    cursor: pointer;
+}
+
+/************ MAIN ************/
+
+.main {
+ margin-bottom: 40px;
+}
+
+
+.main h2, .main p {
+ color: white;
+}
+
+.article img {
+ height: 120px;
+ margin: auto;
+ margin-bottom: 20px;
+}
+
+.article {
+ padding: 30px;
+ text-align: center;
+ background-color: rgba(255,255,255,0.05);
+ border-radius: 30px;
+ margin: 20px;
+ max-width: 400px;
+}
+
+.section {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.article h2 {
+ margin-bottom: 20px;
+ font-size: 20px;
+}
+
+/*********** Footer **********/
+
+
+.footer {
+ padding: 15px;
+ color: white;
+ text-align: center;
+ border-top: solid #0c0c0c 0.1px;
+
+}
+
+.footer img {
+ padding: 10px;
+ height: 70px;
+ margin: 10px;
+}
+
+.footer-social {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 20px;
+
+}
+
+
+/*********** RESPONSIVE ************/
+
+
+
+@media (min-width:1000px){
+ 
+ .container {
+  width: 90%;
+ }
+ 
+ .banner-title {
+  font-size: 50px;
+ }
+ 
+ .banner {
+  position: relative;
+ }
+ 
+ .banner .container {
+  position: absolute;
+  padding-top: 150px;
+  padding-left: 300px;
+  top: 50%;
+  right: 50px;
+  transform: translateX(-50px) translateY(-50%);
+  max-width:700px;
+  height: 100%;
+ 
+  /* gradient */
+background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 49%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 49%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 49%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+ }
+}
+
+@media (min-width:1360px){
+ .banner .container {
+  max-width: 800px;
+  padding-left: 150px;
+ }
+ 
+ .section {
+  justify-content: space-around;
+ }
+ 
+ .display {
+  right: -50%;
+ }
+ 
+ .nav {
+  width: -50%;
+ }
+}
+
+

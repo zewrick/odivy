@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+/* Generals */
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+img {
+ display: block;
+ max-width: 100%;
+}
+
+.container{
+ width: 90%;
+ margin: auto;
+}
+
+body {
+  letter-spacing: 1px;
+ font-family: 'roboto', sans-serif;
+ background: #fff;
+}
+
+h1, h2, h3 {
+ font-weight: bold;
+}
+
+p {
+ font-weight: ;
+  font-size: 18px;
+}
+
+/* HEADER */
+.header {
+ width: 50%;
+ top:0;
+ left:0;
+ margin: auto;
+}
+ 
+.header .container {
+ text-align: center;
+ j
+}
+
+.logo{
+ margin: 10px;
+ height: 40px;
+ margin: auto;
+ margin-top: 30px;
+}
+
+
+/*********** Form **********/
+
+form {
+ width: 50%;
+ margin: auto;
+ padding-top: 30px;
+ margin-bottom: 50px;
+ font-size: 18px;
+
+}
+
+form .form-group{
+ display: flex;
+ flex-direction: column;
+ padding: 10px;
+ 
+}
+
+.form-group label {
+ margin-bottom: 5px;
+}
+
+.form-class {
+ border-radius: 5px;
+  border-radius: 50px;
+ height:30px;
+
+}
+
+/*--- warning message ---*/
+
+.warning-form {
+ color: white;
+ background-color: rgb(0,0,0,1);
+ border-radius: 16px;
+ padding-left: 10px;
+ font-size: 16px;
+}
+
+/*********** Footer **********/
+
+
+.footer {
+ padding: 15px;
+ color: black;
+ text-align: center;
+
+
+}
+
+.footer img {
+ padding: 10px;
+ height: 70px;
+ margin: 10px;
+}
+
+.footer-social {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 20px;
+
+}
+
+/*********** Form ************/
+
+form {
+color: black; 
+}
+
+/*********** RESPONSIVE ************/
+
+
+
+@media (min-width:1000px){
+ 
+ .container {
+  width: 90%;
+ }
+}
+
+@media (min-width:1360px){
+ 
+}
+
+
