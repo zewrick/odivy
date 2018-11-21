@@ -27,13 +27,12 @@ h1, h2, h3 {
 }
 
 p {
- font-weight: ;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* HEADER */
 .header {
- height: 60px;
+ height: 50px;
  background: #000;
  position: fixed;
  width: 100%;
@@ -49,13 +48,13 @@ p {
 }
 
 .logo{
- margin: 13px;
- height: 33px;
+ margin: 10px;
+ height: 30px;
 }
 
 .icon-menu {
- height: 33px;
- margin: 13px;
+ height: 30px;
+ margin: 10px;
  cursor: pointer;
 }
 
@@ -132,26 +131,30 @@ right: 0;
 
 .banner-text{
  text-align: justify;
- margin-bottom: 10px;
+ margin-bottom: 5px;
 
 }
 
 .banner-title{
- font-size: 35px;
+ font-size: 25px;
 }
 
 .btn-banner {
-
   background-color: rgba(23,253,9,0.85);
     border: none;
     color: white;
  font-weight: bold;
     padding: 15px 35px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     margin: 4px 2px;
  border-radius: 30px;
     cursor: pointer;
+}
+
+.banner-element span {
+ color: white;
+ font-size: 13px;
 }
 
 /************ MAIN ************/
@@ -166,7 +169,7 @@ right: 0;
 }
 
 .article img {
- height: 120px;
+ height: 100px;
  margin: auto;
  margin-bottom: 20px;
 }
@@ -177,7 +180,7 @@ right: 0;
  background-color: rgba(255,255,255,0.05);
  border-radius: 30px;
  margin: 20px;
- max-width: 400px;
+ max-width: 360px;
 }
 
 .section {
@@ -219,10 +222,10 @@ right: 0;
 /*********** RESPONSIVE ************/
 
 
-@media(min-width:762px){
+@media(min-width:700px){
 
  .banner-title {
-  font-size: 55px;
+  font-size: 40px;
  }
  
  .banner {
@@ -250,15 +253,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
  
  .banner-element {
   position: absolute;
-  max-width: 370px;
+  width: 400px;
   right: 0;
  }
  
  .banner-container {
   z-index: 2;
   position: absolute;
-  top: 60px;
-  padding-top: 50px;
+  top: 50px;
+  padding-top: 40px;
   width:100%;
   height: 100vh;
  
@@ -273,45 +276,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   position: relative;
   z-index: 2;
  }
- 
 }
 
-@media (min-width:1360px){
-  .header{
-  height: 90px;
- }
- .logo{
-  height: 50px;
-  margin: 20px;
- }
- 
- .icon-menu{
-  height: 50px;
-  margin: 20px;
- }
- .nav {
-  top: 90px;
- }
- 
- .banner-element{
-  max-width: 650px;
-  margin-top: 70px;
-  padding: 10px;
- }
- 
- .banner-element p, .banner-element button {
-  margin-top: 20px;
- }
- 
- .banner-img{
+@media (min-width:850px){
+   .banner-img{
   display: none;
  }
  .banner-img-responsive{
   display: block;
  }
- 
+}
 
+@media (min-width:1360px){
+  .header{
+  height: 70px;
+ }
+ .logo{
+  height: 40px;
+  margin: 15px;
+ }
  
+ .icon-menu{
+  height: 40px;
+  margin: 15px;
+ }
+ .nav {
+  top: 90px;
+ }
+ .banner-element{
+  width: 550px;
+ }
+ 
+ .banner-container{
+  padding-top:100px;
+  
+ }
+ 
+ .banner-subcontainer{
+ 
+ }
+
  .section {
   justify-content: space-around;
  }
