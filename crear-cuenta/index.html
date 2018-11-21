@@ -16,7 +16,17 @@
  </div>
 </header>
 
-<form action="#" onsubmit="return validation()"> 
+<div class="warning-message" id="warning-message">
+ <div class="warning-message-container">
+  <img src="imgs/warning.png" alt="">
+  <div class="message">
+  <p style="font-family:'roboto:300', sans-serif; color: red;' ">Ha surgirdo un problema</p>
+  <p>Por favor revisa que todos los campos estén bien llenados.</p>
+  </div>
+ </div>
+</div>
+<form action="#" onsubmit="return validation()">
+<div class="form-container">
 <div class="form-group">
  <label for="">Usuario:</label>
  <input type="text" name="user" id="user" class="form-class" autocomplete="off">
@@ -46,11 +56,11 @@
 </div>
 
 <div class="form-group">
- <input type="submit" name="submit" value="Registrarse" class="form-class">
+ <input type="submit" name="submit" value="Registrarse" class="form-class btn">
 </div>
 
  
- 
+</div>  
 </form>
 
 <footer class="footer">
