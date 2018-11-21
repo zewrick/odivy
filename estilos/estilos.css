@@ -62,7 +62,7 @@ p {
 .nav {
  position: absolute;
  width: 100%;
- top: 60px;
+ top: 50px;
   /* display from left */
  right: -100%;
  transition: all 0.5s;
@@ -300,9 +300,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   height: 40px;
   margin: 15px;
  }
- .nav {
-  top: 90px;
- }
+ 
  .banner-element{
   width: 550px;
  }
@@ -312,9 +310,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   
  }
  
- .banner-subcontainer{
- 
- }
+
 
  .section {
   justify-content: space-around;
@@ -326,6 +322,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
  
  .nav {
   width: -50%;
+  top: 70px;
  }
 }
 
