@@ -17,9 +17,8 @@ img {
 }
 
 body {
-  letter-spacing: 1px;
  font-family: 'roboto', sans-serif;
- background: #fff;
+ background: white;
 }
 
 h1, h2, h3 {
@@ -27,8 +26,7 @@ h1, h2, h3 {
 }
 
 p {
- font-weight: ;
-  font-size: 18px;
+  font-size:15px;
 }
 
 /* HEADER */
@@ -37,54 +35,35 @@ p {
  top:0;
  left:0;
  margin: auto;
- margin-bottom: 25px;
-}
- 
-.header .container {
- text-align: center;
- j
+ margin-bottom: 20px;
 }
 
-.logo{
- height: 40px;
+.header .container {
+ text-align: center;
+}
+
+.logo {
+ height: 35px;
  margin: auto;
- margin-top: 30px;
+ margin-top: 15px;
 }
 
 
 /*********** Form **********/
 
 form {
- position: relative;
- padding:10px;
+ padding:5px;
  font-size: 18px;
  border: solid 1px rgba(0,0,0,0.1);
  border-radius: 10px;
 }
 
-form, .warning-message-container{
- width: 280px;
+form, .warning-wrapper, .sign-in-container {
+ width: 320px;
  margin: auto;
 }
 
-.warning-message-container{
- padding: 20px;
- border:  solid 1px rgba(0,0,0,0.1);
- border-radius: 10px;
-
-}
-.warning-message{
-  margin-bottom: 25px;
- display: none;
-}
-
-.warning-message p{
- font-size: 13px;
- margin-bottom: 5px;
-}
-
 .form-class {
- border: none;
  border: solid 1px rgba(0,0,0,0.1);
  border-radius: 20px;
  height: 30px;
@@ -92,13 +71,18 @@ form, .warning-message-container{
 
 .form-container{
  width: 100%;
- margin: auto;
+ margin: 0;
 }
 
-.form-group{
+.form-group {
  display: flex;
  flex-direction: column;
- padding: 10px;
+ padding: 5px;
+ margin:5px;
+}
+
+.form-group p{
+ font-size: 13px;
 }
 
 .form-group label {
@@ -107,21 +91,46 @@ form, .warning-message-container{
  font-size: 13px;
 }
 .btn{
- margin-top: 20px;
+ margin-top: 5px;
  background-color: rgba(0,0,0,0.4);
  color: white;
  font-size: 15px;
- 
+
 }
 
 
 /*--- warning message ---*/
 
+.warning-wrapper{
+ padding: 20px;
+ border:  solid 1px rgba(0,0,0,0.1);
+ border-radius: 10px;
+}
+
+#warning-message{
+ display: none;
+}
+
+#error-list-1{
+ display: 
+}
+
+.warning-message{
+  margin-bottom: 25px;
+
+}
+
+.warning-message p {
+ font-size: 13px;
+ margin-bottom: 5px;
+ margin-left: 45px;
+}
+
 .warning-message img {
- height: 40px;
+ height: 25px;
  float: left;
- margin: 0px 20px 60px 0px;
- 
+ margin: 0px 10px 0px 0px;
+
 }
 
 
@@ -132,51 +141,40 @@ form, .warning-message-container{
  font-family: 'roboto:300', sans-serif;
 }
 
+/*********** Sign in **********/
 
+.sign-in {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+  font-family: 'roboto:300', sans-serif;
+ font-size: 13px;
+}
+
+.sign-in button {
+ border-radius: 20px;
+ border: none;
+ background-color: rgba(0,0,0,0.4);
+ color: white;
+ padding: 10px;
+ width: 120px;
+}
+
+.sign-in-container{
+ margin-top: 15px;
+ margin-bottom: 15px;
+}
 
 /*********** Footer **********/
 
 
 .footer {
  padding: 15px;
- color: black;
  text-align: center;
-
-
 }
 
-.footer img {
- padding: 10px;
- height: 70px;
- margin: 10px;
-}
-
-.footer-social {
- display: flex;
- justify-content: center;
- margin-bottom: 20px;
-
-}
-
-/*********** Form ************/
-
-form {
-color: black; 
+.copy{
+ font-size: 13px;
 }
 
 /*********** RESPONSIVE ************/
-
-
-
-@media (min-width:1000px){
- 
- .container {
-  width: 90%;
- }
-}
-
-@media (min-width:1360px){
- 
-}
-
-

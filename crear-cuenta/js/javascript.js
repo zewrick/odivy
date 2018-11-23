@@ -1,30 +1,54 @@
 
-
-function validation() {
- let user = document.getElementById('user').value
- let psw = document.getElementById('psw').value
- let conPsw = document.getElementById('con-psw').value
+function validate(){
+    let userField = document.getElementById('user').value
+    let pswField = document.getElementById('psw').value
+    let confirmPswField = document.getElementById('confirmPsw').value
+    let emailField = document.getElementById('email').value
+    let missingFields = false;
+    let stringFields = ""
    
- if (user === "" && psw === "" && conPsw=== "") {
-     document.getElementById('warning-message').style.display = "block"
+
+	if (userField == "") {
+        missingFields = true
+        stringFields  += "* Ingresa un usuario" + "<br />"
+	}
+    if (pswField == "") {
+        missingFields = true
+        stringFields  += "* Ingresa una contraseña" + "<br />"
+	}
+    if (confirmPswField == "") {
+        missingFields = true
+        stringFields  += "* Confirma la contraseña" + "<br />"
+	}
+    if (emailField == "") {
+        missingFields = true
+        stringFields  += "* Ingresa un email" + "<br />"
+	}
+ 
+     if (userField == "atuncar" && pswField == "chevere") {
+        missingFields = false
+	}
+ 
+    if(userField.length >=1 || userField.length <= 6) {
+       missingFields = true
+       stringFields += "* El usuario debe ser de 7 dígitos" + "<br />"
+    }
+    if (!isNaN(userField)) {
+      missingFields = true
+      stringFields += "* El usuario no debe contener números" + "<br />"
+    }
      
-  }
+
+	if (missingFields) {
+        document.getElementById('warning-message').style.display = "block"
+        document.getElementById('error-list-1').innerHTML = stringFields
+       return false
+    }
  
- if (user === ""){
-  document.getElementById('userSpan').innerHTML = "* Escribe un usuario"
- }
+    if (missingFields = false) {
+       return false
+    }
  
- if (psw=== ""){
-  document.getElementById('pswSpan').innerHTML = "* Escribe tu constraseña"
- }
- 
- if (conPsw === ""){
-  document.getElementById('conPswSpan').innerHTML = "* Confirma tu contraseña"
-  return false
- }
- 
- 
+ return true
 }
-
-
 

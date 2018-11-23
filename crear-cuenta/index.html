@@ -17,15 +17,28 @@
 </header>
 
 <div class="warning-message" id="warning-message">
- <div class="warning-message-container">
-  <img src="imgs/warning.png" alt="">
-  <div class="message">
-  <p style="font-family:'roboto:300', sans-serif; color: red;' ">Ha surgirdo un problema</p>
-  <p>Por favor revisa que todos los campos estén bien llenados.</p>
+<div id="warning-wrapper" class="warning-wrapper" >
+
+ <div class="warning-message-container" id="warning-container">
+  
+  <div id="pic">
+    <img src="imgs/warning.png" alt="">
+  
   </div>
+  <div id="list-error-container">
+    <p style="font-family:'roboto:300', sans-serif; color: red;' ">Ha ocurrido un problema:</p>
+    <p id="error-list-1"></p>
+  
+    
+    
+  
  </div>
+ </div>
+ 
+ </div>
+ 
 </div>
-<form action="#" onsubmit="return validation()">
+<form action="test.html" name="validateForm" method="post">
 <div class="form-container">
 <div class="form-group">
  <label for="">Usuario:</label>
@@ -40,36 +53,38 @@
 </div>
 
 <div class="form-group">
- <label for="">Confrimar contraseña:</label>
- <input type="text" name="con-psw" id="con-psw" class="form-class" autocomplete="off">
- <span id="conPswSpan" class="warning-form"></span>
-</div>
- 
-<div class="form-group">
- <label for="">Número de celular:</label>
- <input type="text" name="mobile" id="mobile-number" class="form-class" autocomplete="off">
+ <label for="">Confirmar contraseña:</label>
+ <input type="text" name="psw" id="confirmPsw" class="form-class" autocomplete="off">
+ <span id="confirmPswSpan" class="warning-form"></span>
 </div>
 
 <div class="form-group">
  <label for="">Email:</label>
- <input type="text" name="email" id="email" class="form-class" autocomplete="off">
+ <input type="text" name="psw" id="email" class="form-class" autocomplete="off">
+ <span id="emailSpan" class="warning-form"></span>
 </div>
 
 <div class="form-group">
- <input type="submit" name="submit" value="Registrarse" class="form-class btn">
+ <input id="submit" type="submit" name="submit" value="Registrarse" class="form-class btn" onclick="return validate();">
+</div>
+
+<div class="form-group">
+ <p>Al registrarte aceptas nuestras <a href="">Políticas de Uso y Privacidad,</a> así como recibir avisos de publicidad por email basada en tus intereses. </p>
 </div>
 
  
 </div>  
 </form>
+<div class="sign-in-container">
+<div class="sign-in">
+ <span>¿Ya tienes cuenta?</span>
+ <button>Iniciar sesión</button>
+</div>
+</div>
 
 <footer class="footer">
- <div class="footer-social">
-  <a href="" class="icon-fb" ><img src="imgs/icon-fb.png" alt=""></a>
-  <a href="" class="icon-tw" ><img src="imgs/icon-tw.png" alt=""></a>
-  <a href="" class="icon-in" ><img src="imgs/icon-in.png" alt=""></a>
- </div>
- <p class="copy">&copy; Odiby - 2018 - All rights reserved</p>
+ 
+ <p class="copy">&copy; Odivy, 2018. Todos los derechos reservados</p>
 </footer>
 
 <script src="js/javascript.js"></script>
