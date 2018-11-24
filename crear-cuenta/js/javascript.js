@@ -1,43 +1,36 @@
 
 function validate(){
-    let userField = document.getElementById('user').value
-    let pswField = document.getElementById('psw').value
-    let confirmPswField = document.getElementById('confirmPsw').value
-    let emailField = document.getElementById('email').value
+    
     let missingFields = false;
     let stringFields = ""
    
 
-	if (userField == "") {
+	if (validateForm.user.value == "" || validateForm.psw.value  == "" || validateForm.confirmPsw.value  == "" || validateForm.email.value  == "" ) {
         missingFields = true
-        stringFields  += "* Ingresa un usuario" + "<br />"
-	}
-    if (pswField == "") {
-        missingFields = true
-        stringFields  += "* Ingresa una contraseña" + "<br />"
-	}
-    if (confirmPswField == "") {
-        missingFields = true
-        stringFields  += "* Confirma la contraseña" + "<br />"
-	}
-    if (emailField == "") {
-        missingFields = true
-        stringFields  += "* Ingresa un email" + "<br />"
+        stringFields  += "* Llena todos los campos" + "<br />"
 	}
  
-     if (userField == "atuncar" && pswField == "chevere") {
+    
+   
+ /*
+     if (userField == "elatuncar" && pswField == "chevere") {
         missingFields = false
-	}
+	} */
  
-    if(userField.length >=1 || userField.length <= 6) {
+    if(validateForm.user.value.length >= 1 && validateForm.user.value.length <=6 ) {
        missingFields = true
        stringFields += "* El usuario debe ser de 7 dígitos" + "<br />"
+    } 
+ 
+    if (!isNaN(parseFloat(validateForm.user.value))) {
+       missingFields = true
+       stringFields += "* El usuario debe contener letras" + "<br />"
     }
-    if (!isNaN(userField)) {
-      missingFields = true
-      stringFields += "* El usuario no debe contener números" + "<br />"
+    if (validateForm.psw.value != validateForm.confirmPsw.value ) {
+       missingFields = true
+       stringFields += "* Las contraseñas no coinciden" + "<br />"
     }
-     
+  
 
 	if (missingFields) {
         document.getElementById('warning-message').style.display = "block"
