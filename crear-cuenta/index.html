@@ -1,92 +1,183 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Odivy -- Play everything</title>
+
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <meta charset="UTF-8">
+
     <meta name="description" content="">
+
     <meta name="keywords" content="">
+
     <link rel="stylesheet" href="estilos/estilos.css">
+
 </head>
+
 <body>
+
 <header class="header">
+
  <div class="container">
+
   <img class="logo" src="imgs/odivy_create_logo.png" alt=""> 
+
   <p>Crear cuenta</p> 
+
  </div>
+
 </header>
 
+
+
 <div class="warning-message" id="warning-message">
+
 <div id="warning-wrapper" class="warning-wrapper" >
 
+
+
  <div class="warning-message-container" id="warning-container">
+
   
+
   <div id="pic">
+
     <img src="imgs/warning.png" alt="">
+
   
+
   </div>
+
   <div id="list-error-container">
+
     <p style="font-family:'roboto:300', sans-serif; color: red;' ">Ha ocurrido un problema:</p>
+
     <p id="error-list-1"></p>
+
   
+
     
+
     
+
   
+
  </div>
+
  </div>
+
  
+
  </div>
+
  
+
 </div>
+
 <form action="test.html" name="validateForm" method="post">
+
 <div class="form-container">
+
 <div class="form-group">
+
  <label for="">Usuario:</label>
+
  <input type="text" name="user" value="" id="user" class="form-class" autocomplete="off">
+
  <span id="userSpan" class="warning-form"></span>
+
 </div>
 
+
+
 <div class="form-group">
+
  <label for="">Contraseña:</label>
+
  <input type="text" name="psw" id="psw" class="form-class" autocomplete="off">
+
  <span id="pswSpan" class="warning-form"></span>
+
 </div>
 
+
+
 <div class="form-group">
+
  <label for="">Confirmar contraseña:</label>
+
  <input type="text" name="confirmPsw" id="confirmPsw" class="form-class" autocomplete="off">
+
  <span id="confirmPswSpan" class="warning-form"></span>
+
 </div>
 
+
+
 <div class="form-group">
+
  <label for="">Email:</label>
+
  <input type="text" name="email" id="email" class="form-class" autocomplete="off">
+
  <span id="emailSpan" class="warning-form"></span>
+
 </div>
 
+
+
 <div class="form-group">
+
  <input id="submit" type="submit" name="submit" value="Registrarse" class="form-class btn" onclick="return validate();">
+
 </div>
 
+
+
 <div class="form-group">
+
  <p>Al registrarte aceptas nuestras <a href="">Políticas de Uso y Privacidad,</a> así como recibir avisos de publicidad por email basada en tus intereses. </p>
+
 </div>
+
+
 
  
+
 </div>  
+
 </form>
+
 <div class="sign-in-container">
+
 <div class="sign-in">
+
  <span>¿Ya tienes cuenta?</span>
+
  <button>Iniciar sesión</button>
+
 </div>
+
 </div>
+
+
 
 <footer class="footer">
+
  
+
  <p class="copy">&copy; Odivy, 2018. Todos los derechos reservados</p>
+
 </footer>
 
+
+
 <script src="js/javascript.js"></script>
+
 </body>
+
 </html>
